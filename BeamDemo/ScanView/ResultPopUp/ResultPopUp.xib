@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="5uz-Ae-0Qe" userLabel="Card View" customClass="ResultPopUp" customModule="BeamDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="620" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmA-ji-tll" userLabel="Background view" customClass="CornerRoundingView" customModule="SwiftMessages">
+                    <rect key="frame" x="30" y="54" width="560" height="80"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="101" verticalHuggingPriority="251" image="exerciseball" translatesAutoresizingMaskIntoConstraints="NO" id="a07-NJ-K75">
+                            <rect key="frame" x="8" y="8" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="YSS-HZ-ehM"/>
+                                <constraint firstAttribute="width" constant="65" id="l5H-j9-OVY"/>
+                                <constraint firstAttribute="width" secondItem="a07-NJ-K75" secondAttribute="height" id="rWA-sr-2xw"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="401" verticalHuggingPriority="251" text="Barbell" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAX-C8-YDC">
+                            <rect key="frame" x="81" y="8" width="446.5" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="101" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ApB-ZK-J3n">
+                            <rect key="frame" x="535.5" y="32" width="12.5" height="16.5"/>
+                            <color key="tintColor" systemColor="separatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12.5" id="SZA-sL-ZNs"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="PAX-C8-YDC" firstAttribute="leading" secondItem="a07-NJ-K75" secondAttribute="trailing" constant="8" id="68y-iH-jK7"/>
+                        <constraint firstAttribute="bottom" secondItem="PAX-C8-YDC" secondAttribute="bottom" constant="8" id="HoM-p3-A07"/>
+                        <constraint firstAttribute="height" constant="80" id="OCQ-RB-bew"/>
+                        <constraint firstItem="ApB-ZK-J3n" firstAttribute="centerY" secondItem="hmA-ji-tll" secondAttribute="centerY" id="UVJ-Vc-JWl"/>
+                        <constraint firstItem="a07-NJ-K75" firstAttribute="top" secondItem="hmA-ji-tll" secondAttribute="top" constant="8" id="gaW-nL-TYR"/>
+                        <constraint firstAttribute="trailing" secondItem="ApB-ZK-J3n" secondAttribute="trailing" constant="12" id="iJg-ln-5RT"/>
+                        <constraint firstItem="ApB-ZK-J3n" firstAttribute="leading" secondItem="PAX-C8-YDC" secondAttribute="trailing" constant="8" id="nli-UY-BmQ"/>
+                        <constraint firstItem="a07-NJ-K75" firstAttribute="leading" secondItem="hmA-ji-tll" secondAttribute="leading" constant="8" id="pOJ-aW-LUR"/>
+                        <constraint firstItem="PAX-C8-YDC" firstAttribute="top" secondItem="hmA-ji-tll" secondAttribute="top" constant="8" id="uP7-XN-NZF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="aqM-hG-7bg"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="hmA-ji-tll" secondAttribute="bottom" constant="10" id="PXu-pd-d8N"/>
+                <constraint firstItem="hmA-ji-tll" firstAttribute="top" secondItem="5uz-Ae-0Qe" secondAttribute="topMargin" constant="10" id="WQF-sQ-2iQ"/>
+                <constraint firstItem="hmA-ji-tll" firstAttribute="leading" secondItem="5uz-Ae-0Qe" secondAttribute="leadingMargin" constant="10" id="ccU-QW-Pdi"/>
+                <constraint firstAttribute="trailingMargin" secondItem="hmA-ji-tll" secondAttribute="trailing" constant="10" id="wk5-35-Ssp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="bounceAnimationOffset">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundView" destination="hmA-ji-tll" id="s1v-th-Ls1"/>
+                <outlet property="iconView" destination="a07-NJ-K75" id="cSb-k2-AiR"/>
+                <outlet property="titleView" destination="PAX-C8-YDC" id="VyW-ur-rsV"/>
+            </connections>
+            <point key="canvasLocation" x="318.84057971014494" y="589.95535714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="exerciseball" width="3024" height="4032"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
